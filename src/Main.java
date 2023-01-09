@@ -15,6 +15,15 @@ public  class Main{
 //        long myNumber = (long) 3.14; have to cast long into parantheses to use a decimal.
 //        System.out.println(myNumber);
 
+    long myNumber = 123L;
+        System.out.println(myNumber);
+
+        float myNumber1 = (float) 3.14;
+        System.out.println(myNumber1);
+
+        int x = 5;
+        System.out.println(x++);
+        System.out.println(x);
 
     }
 }
