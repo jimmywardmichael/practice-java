@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public  class Main{
 
     public static void main(String[] args){
@@ -25,5 +26,18 @@ public  class Main{
         System.out.println(x++);
         System.out.println(x);
 
+        String name = "codeup";
+        System.out.printf("I am attending, %s. Nice to see you %n", name);
+        String greeting = "Howdy y'all";
+        System.out.printf("%s, %s!", greeting, name);
+
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter something: ");
+        String userInput = scanner.next();
+        String userInput1 = scanner.nextLine();
+
+        System.out.println("You entered: --> \"" + userInput1 + "\" <--");
     }
 }
