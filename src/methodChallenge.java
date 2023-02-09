@@ -1,12 +1,23 @@
+import org.w3c.dom.ls.LSOutput;
+
 public class methodChallenge {
     public static void main(String[] args) {
-
+        int highScorePosition = calculateHighScorePosition(1500);
+        displayHighScorePosition("Tim", highScorePosition);
     }
-    public double displayHighScorePosition(String playersName, double playersPosition ){
-
+    public static void displayHighScorePosition(String playersName, int highScorePosition){
+        System.out.println(playersName + " managed to get into position " + highScorePosition + " on the high score list");
     };
-    public double calculateHighScorePosition(double playerScore){
-
+    public static int calculateHighScorePosition(int playerScore){
+        if(playerScore >= 1000){
+            return 1;
+        }else if (playerScore >= 500 && playerScore < 1000){
+            return 2;
+        } else if (playerScore >= 100 && playerScore < 500) {
+            return 3;
+        }else{
+            return 4;
+        }
     };
 }
 
